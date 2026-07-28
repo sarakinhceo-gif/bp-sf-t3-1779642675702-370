@@ -523,78 +523,8 @@
         </nav>
     </header>
 
-    <main>
-        <!-- HERO -->
-        <section id="hero" class="hero container">
-            <div class="hero-badge">⚡ 서버 웜업 에디션</div>
-            <h1>마포<br>셔츠룸</h1>
-            <div class="hero-text">
-                지루한 놈들은 꺼져라.<br>
-                진짜 웜업, 진짜 시스템.<br>
-                마포 셔츠룸은 단 하나.
-            </div>
-            <a href="tel:010-6279-0862" class="btn">📞 010-6279-0862</a>
-        </section>
+<main class='container'><section class='hero'><div class='hero-text'><span class='hero-badge'>마포 지역 정보 · 서버 웜업 안내</span><h1>마포 셔츠룸 인근 지역 정보와 서버 웜업 이용 안내</h1><p>이 페이지는 마포 셔츠룸 인근의 기본적인 지역 정보와, 서비스 오픈 전에 진행하는 서버 웜업 절차를 함께 정리한 안내 페이지다.</p><a class='btn' href='#guide'>자세히 보기</a></div></section><section class='gap-section asymmetric-grid'><div class='highlight'><h2>지역 정보</h2><p>마포는 상업 시설과 오피스가 함께 밀집한 지역으로, 저녁 시간대 유동 인구가 꾸준한 편으로 알려져 있다. 인근 교통망과 주차 여건은 방문 전 별도로 확인하는 것이 좋다.</p></div><div class='border-accent'><h2>서버 웜업이란</h2><p>서버 웜업은 실제 트래픽이 몰리기 전에 캐시와 연결 풀을 미리 데워두어, 초기 응답 지연을 줄이는 절차를 말한다. 신규 배포 직후나 트래픽 급증이 예상되는 시점에 주로 진행된다.</p></div></section><section class='overlap-section'><h2 class='skewed'>서버 웜업 진행 순서</h2><p>일반적으로 다음과 같은 순서로 진행된다. 먼저 대상 서버와 엔드포인트 목록을 정리하고, 낮은 트래픽부터 점진적으로 요청을 늘려가며 응답 시간을 관찰한다. 이후 이상 징후가 없는지 로그를 확인하고, 정상 범위에 도달하면 실제 트래픽을 받기 시작한다.</p></section><section class='gap-48'><h2>체크리스트</h2><ul><li class='pull-up'>대상 서버와 엔드포인트 목록을 사전에 정리했는가</li><li class='pull-up'>캐시 예열에 사용할 요청 시나리오를 준비했는가</li><li class='pull-up'>응답 시간과 오류율을 실시간으로 모니터링할 수 있는가</li><li class='pull-up'>문제 발생 시 이전 상태로 되돌릴 절차가 마련되어 있는가</li></ul></section><section class='review-grid'><div class='review-card'><h3>사전 점검 항목</h3><p>도메인 연결 상태와 인증서 유효 기간, 기본 페이지 응답 여부를 배포 전에 확인한다.</p></div><div class='review-card'><h3>사후 모니터링 항목</h3><p>웜업 완료 이후에도 일정 기간 동안 응답 속도와 오류 발생 여부를 지속적으로 관찰한다.</p></div></section><section class='highlight border-accent'><h2>자주 묻는 질문</h2><p><strong>Q. 서버 웜업은 얼마나 자주 진행하나.</strong><br>A. 대규모 배포나 트래픽 급증이 예상되는 시점마다 진행하는 것이 일반적이다.</p><p><strong>Q. 마포 지역 정보는 왜 함께 안내되나.</strong><br>A. 지역 기반 서비스 페이지 특성상 위치 정보를 함께 제공하기 위함이다.</p></section><section><h2>흔히 하는 실수</h2><ul><li>웜업 요청 시나리오 없이 곧바로 실제 트래픽을 연결하는 경우</li><li>모니터링 없이 웜업이 끝났다고 판단해버리는 경우</li><li>지역 정보와 서비스 안내를 분리하지 않아 페이지 목적이 불명확해지는 경우</li></ul></section><section><h2>용어 정리</h2><dl><dt>캐시</dt><dd>자주 조회되는 데이터를 미리 저장해 응답 속도를 높이는 임시 저장소다.</dd><dt>연결 풀</dt><dd>서버와 데이터베이스 사이의 연결을 미리 만들어 재사용하는 방식이다.</dd></dl><h2>웜업 방식 비교</h2><table><thead><tr><th>방식</th><th>특징</th></tr></thead><tbody><tr><td>수동 웜업</td><td>담당자가 직접 요청을 보내며 세밀하게 조정할 수 있다.</td></tr><tr><td>자동화 웜업</td><td>정해진 스크립트로 반복 실행해 소요 시간을 줄인다.</td></tr></tbody></table></section><p class='footer-phone'>문의: <a href='tel:010-6279-0862'>010-6279-0862</a></p></main>
 
-        <!-- ABOUT / ASYMMETRIC BLOCKS -->
-        <section id="about" class="container">
-            <h2>⚡ 웜업</h2>
-            <div class="asymmetric-grid">
-                <div>
-                    <h3 style="font-size:3rem; border-bottom:4px solid #ff3b00; display:inline-block;">시스템</h3>
-                    <p style="font-size:1.4rem; margin-top:24px;">완벽한 서버 웜업. 마포 셔츠룸만의 독자적인 프로세스. 24시간 준비.</p>
-                    <p>📍 마포구 핵심 입지</p>
-                </div>
-                <div>
-                    <h3 style="font-size:3rem; border-bottom:4px solid #fff; display:inline-block;">속도</h3>
-                    <p style="font-size:1.4rem; margin-top:24px;">기다림은 없다. 바로 웜업. 5분이면 세팅 완료.</p>
-                    <p>⏱️ 365일 24시</p>
-                </div>
-                <div>
-                    <h3 style="font-size:3rem; border-bottom:4px solid #ff3b00; display:inline-block;">파워</h3>
-                    <p style="font-size:1.4rem; margin-top:24px;">압도적인 성능. 마포 셔츠룸만의 노하우.</p>
-                    <p>🔥 100% 하드웨어</p>
-                </div>
-            </div>
 
-            <!-- OVERLAPPING PULL-UP -->
-            <div class="pull-up">
-                <p style="font-size:2.2rem; font-weight:600; text-transform:uppercase; border-left:6px solid #ff3b00; padding-left:24px;">
-                    진짜는 가짜를 용납하지 않는다.<br>
-                    <span class="highlight">마포 셔츠룸</span> 이게 끝이다.
-                </p>
-                <div style="margin-top:36px; display:flex; gap:24px; flex-wrap:wrap;">
-                    <span class="skewed">🔥 웜업률 98%</span>
-                    <span class="skewed" style="border-color:#ff3b00;">⚡ 리부트 0.4초</span>
-                    <span class="skewed" style="background:#ff3b00; color:#000;">🏆 마포 1위</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- REVIEWS (UGC) -->
-        <section id="reviews" class="container overlap-section">
-            <h2>💬 후기</h2>
-            <p style="font-size:1.6rem; border-bottom:4
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⚖️ COMPARE</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">의사결정 직전의 틀이 놓친 연장 조건, 그 비밀을 찾아내다 아, 진짜... 2016년 한일 통화스와프 협정 만료 직전 양국 중앙은행 간 비공식 채널에서 논의된 연장 조건에 대한 실제 수치를 정확히 파악하는 것은 쉽지 않지만, 그 중요성을 이해해야 합니다. 이런 맥락을 </p>
-      </div>
-      <a href="posts/compare-001-aj1eto.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
 </body>
 </html>
