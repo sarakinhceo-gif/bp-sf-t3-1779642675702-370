@@ -1,214 +1,195 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나</title>
-    <meta name="description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라. 전화 010-6279-0862.">
-    <meta name="keywords" content="마포 셔츠룸 정보, 마포 셔츠룸 주소, 마포 셔츠룸 시스템, 마포 서버 웜업, 마포 셔츠룸 상담, 마포 셔츠룸 후기, 마포 셔츠룸 전화">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sf-t3-1779642675702-370.maphoshirts.xyz/about.html">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나">
-    <meta property="og:description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라. 전화 010-6279-0862.">
-    <meta property="og:url" content="https://sf-t3-1779642675702-370.maphoshirts.xyz/about.html">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나">
-    <meta name="twitter:description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라. 전화 010-6279-0862.">
-    <style>
-        /* RESET & BASE */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 14px; scroll-behavior: smooth; }
-        body { 
-            font-family: 'Inter', 'Noto Sans KR', sans-serif; 
-            background: #0a0a0a; 
-            color: #e0e0e0; 
-            line-height: 1.6; 
-            position: relative; 
-            overflow-x: hidden; 
-        }
-        /* BRUTALIST RAW TEXTURE via repeating gradients */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 2px, transparent 2px, transparent 6px);
-            pointer-events: none;
-            z-index: 9999;
-        }
-        /* TYPOGRAPHY oversize */
-        h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; }
-        h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 0.95; color: #fff; }
-        h2 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; color: #ff0055; }
-        h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); color: #ff7700; }
-        p, li { font-size: 1rem; color: #b0b0b0; }
-        a { color: #ff0077; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
-        a:hover { border-bottom-color: #ff0077; color: #ff3399; }
-        /* LAYOUT full bleed */
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
-        section { padding: 4rem 0; border-bottom: 1px solid #222; }
-        /* NAV */
-        nav { 
-            background: #111; 
-            padding: 1rem 1.5rem; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            border-bottom: 2px solid #ff0055; 
-            position: sticky; top: 0; z-index: 1000; 
-        }
-        nav .logo a { 
-            font-size: 1.8rem; 
-            font-weight: 900; 
-            color: #fff; 
-            text-transform: uppercase; 
-            border-bottom: none; 
-            letter-spacing: -0.02em;
-        }
-        nav .logo a:hover { color: #ff0055; }
-        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
-        .nav-links li a { 
-            color: #ccc; 
-            font-size: 0.95rem; 
-            font-weight: 600; 
-            text-transform: uppercase; 
-            border-bottom: none; 
-            padding: 0.3rem 0; 
-            transition: color 0.2s; 
-        }
-        .nav-links li a:hover { color: #ff7700; }
-        .nav-links li a.active { color: #ff0077; border-bottom: 2px solid #ff0077; }
-        /* HAMBURGER */
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; }
-        .hamburger span { width: 28px; height: 3px; background: #fff; border-radius: 2px; transition: all 0.3s; }
-        @media (max-width: 768px) {
-            .hamburger { display: flex; }
-            .nav-links { 
-                display: none; 
-                position: absolute; top: 100%; left: 0; right: 0; 
-                background: #111; 
-                flex-direction: column; 
-                padding: 2rem; 
-                gap: 1.5rem; 
-                border-bottom: 2px solid #ff0055; 
-            }
-            .nav-links.open { display: flex; }
-            .nav-links li a { font-size: 1.1rem; }
-        }
-        /* HERO */
-        .hero { 
-            min-height: 60vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: flex-start; 
-            border-bottom: 4px solid #ff0055; 
-            background: radial-gradient(circle at 20% 20%, #1a1a1a, #0a0a0a); 
-        }
-        .hero h1 { margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
-        /* CARD */
-        .card-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 2rem; 
-            margin-top: 2rem; 
-        }
-        .card { 
-            background: #141414; 
-            padding: 2rem; 
-            border: 1px solid #2a2a2a; 
-            border-radius: 0; 
-            transition: border-color 0.3s, transform 0.3s; 
-        }
-        .card:hover { border-color: #ff0055; transform: translateY(-4px); }
-        .card h3 { margin-bottom: 1rem; }
-        .card p { margin-bottom: 1rem; }
-        /* INFO SECTION */
-        .info-detail { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 3rem; 
-            align-items: start; 
-        }
-        .info-detail .left { }
-        .info-detail .right { background: #141414; padding: 2rem; border: 1px solid #2a2a2a; }
-        .info-detail ul { list-style: none; padding: 0; }
-        .info-detail li { padding: 0.5rem 0; border-bottom: 1px solid #222; display: flex; gap: 1rem; }
-        .info-detail li strong { min-width: 100px; color: #ff7700; }
-        /* FAQ */
-        .faq-item { 
-            margin-bottom: 1.5rem; 
-            border-bottom: 1px solid #222; 
-            padding-bottom: 1rem; 
-        }
-        .faq-item h4 { 
-            cursor: pointer; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            color: #ff7700; 
-            font-size: 1.1rem; 
-            font-weight: 700; 
-        }
-        .faq-item h4::after { content: '+'; font-size: 1.4rem; color: #ff0055; }
-        .faq-item p { margin-top: 0.5rem; }
-        /* TEL LINK */
-        .tel-link { 
-            display: inline-block; 
-            background: #ff0055; 
-            color: #fff !important; 
-            padding: 0.8rem 2rem; 
-            font-weight: 900; 
-            font-size: 1.4rem; 
-            border: none; 
-            border-radius: 0; 
-            text-align: center; 
-            transition: background 0.2s; 
-            text-decoration: none; 
-            border-bottom: none !important; 
-            margin-top: 1rem; 
-        }
-        .tel-link:hover { background: #ff7700; color: #fff !important; }
-        /* RESPONSIVE 768 */
-        @media (max-width: 768px) {
-            .info-detail { grid-template-columns: 1fr; gap: 2rem; }
-            .hero h1 { font-size: clamp(2rem, 10vw, 3rem); }
-            .tel-link { font-size: 1.2rem; padding: 0.7rem 1.5rem; width: 100%; }
-        }
-        /* FOOTER */
-        footer { 
-            text-align: center; 
-            padding: 3rem 1rem; 
-            background: #111; 
-            border-top: 2px solid #222; 
-            font-size: 0.85rem; 
-            color: #666; 
-        }
-        footer a { color: #ff0077; }
-    </style>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "마포 셔츠룸 서버 웜업",
-      "description": "마포 셔츠룸 완벽한 서버 웜업. 지루한 놈들은 꺼져라. 진짜 마포 셔츠룸은 단 하나.",
-      "url": "https://sf-t3-1779642675702-370.pages.dev",
-      "telephone": "010-6279-0862",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "마포",
-        "addressRegion": "서울",
-        "addressCountry": "KR"
-      },
-      "areaServed": "마포",
-      "priceRange": "₩₩₩"
-    }
-    </script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+ <title>마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나</title>
+ <meta name="description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라.">
+ <meta name="keywords" content="마포 셔츠룸 정보, 마포 셔츠룸 주소, 마포 셔츠룸 시스템, 마포 서버 웜업, 마포 셔츠룸 상담, 마포 셔츠룸 후기, 마포 셔츠룸 전화">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://sf-t3-1779642675702-370.maphoshirts.xyz/about.html">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나">
+ <meta property="og:description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라.">
+ <meta property="og:url" content="https://sf-t3-1779642675702-370.maphoshirts.xyz/about.html">
+ <meta property="og:locale" content="ko_KR">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="마포 셔츠룸 정보 | 서버 웜업 | 진짜는 단 하나">
+ <meta name="twitter:description" content="마포 셔츠룸 서버 웜업의 모든 정보. 주소, 시스템, 가격, 상담. 지루한 놈들은 꺼져라.">
+ <style>
+ /* RESET & BASE */
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 14px; scroll-behavior: smooth; }
+ body { 
+ font-family: 'Inter', 'Noto Sans KR', sans-serif; 
+ background: #0a0a0a; 
+ color: #e0e0e0; 
+ line-height: 1.6; 
+ position: relative; 
+ overflow-x: hidden; 
+ }
+ /* BRUTALIST RAW TEXTURE via repeating gradients */
+ body::before {
+ content: '';
+ position: fixed;
+ top: 0; left: 0;
+ width: 100%; height: 100%;
+ background: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 2px, transparent 2px, transparent 6px);
+ pointer-events: none;
+ z-index: 9999;
+ }
+ /* TYPOGRAPHY oversize */
+ h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; }
+ h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 0.95; color: #fff; }
+ h2 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; color: #ff0055; }
+ h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); color: #ff7700; }
+ p, li { font-size: 1rem; color: #b0b0b0; }
+ a { color: #ff0077; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+ a:hover { border-bottom-color: #ff0077; color: #ff3399; }
+ /* LAYOUT full bleed */
+ .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+ section { padding: 4rem 0; border-bottom: 1px solid #222; }
+ /* NAV */
+ nav { 
+ background: #111; 
+ padding: 1rem 1.5rem; 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+ border-bottom: 2px solid #ff0055; 
+ position: sticky; top: 0; z-index: 1000; 
+ }
+ nav .logo a { 
+ font-size: 1.8rem; 
+ font-weight: 900; 
+ color: #fff; 
+ text-transform: uppercase; 
+ border-bottom: none; 
+ letter-spacing: -0.02em;
+ }
+ nav .logo a:hover { color: #ff0055; }
+ .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+ .nav-links li a { 
+ color: #ccc; 
+ font-size: 0.95rem; 
+ font-weight: 600; 
+ text-transform: uppercase; 
+ border-bottom: none; 
+ padding: 0.3rem 0; 
+ transition: color 0.2s; 
+ }
+ .nav-links li a:hover { color: #ff7700; }
+ .nav-links li a.active { color: #ff0077; border-bottom: 2px solid #ff0077; }
+ /* HAMBURGER */
+ .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; }
+ .hamburger span { width: 28px; height: 3px; background: #fff; border-radius: 2px; transition: all 0.3s; }
+ @media (max-width: 768px) {
+ .hamburger { display: flex; }
+ .nav-links { 
+ display: none; 
+ position: absolute; top: 100%; left: 0; right: 0; 
+ background: #111; 
+ flex-direction: column; 
+ padding: 2rem; 
+ gap: 1.5rem; 
+ border-bottom: 2px solid #ff0055; 
+ }
+ .nav-links.open { display: flex; }
+ .nav-links li a { font-size: 1.1rem; }
+ }
+ /* HERO */
+ .hero { 
+ min-height: 60vh; 
+ display: flex; 
+ flex-direction: column; 
+ justify-content: center; 
+ align-items: flex-start; 
+ border-bottom: 4px solid #ff0055; 
+ background: radial-gradient(circle at 20% 20%, #1a1a1a, #0a0a0a); 
+ }
+ .hero h1 { margin-bottom: 1rem; }
+ .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
+ /* CARD */
+ .card-grid { 
+ display: grid; 
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+ gap: 2rem; 
+ margin-top: 2rem; 
+ }
+ .card { 
+ background: #141414; 
+ padding: 2rem; 
+ border: 1px solid #2a2a2a; 
+ border-radius: 0; 
+ transition: border-color 0.3s, transform 0.3s; 
+ }
+ .card:hover { border-color: #ff0055; transform: translateY(-4px); }
+ .card h3 { margin-bottom: 1rem; }
+ .card p { margin-bottom: 1rem; }
+ /* INFO SECTION */
+ .info-detail { 
+ display: grid; 
+ grid-template-columns: 1fr 1fr; 
+ gap: 3rem; 
+ align-items: start; 
+ }
+ .info-detail .left { }
+ .info-detail .right { background: #141414; padding: 2rem; border: 1px solid #2a2a2a; }
+ .info-detail ul { list-style: none; padding: 0; }
+ .info-detail li { padding: 0.5rem 0; border-bottom: 1px solid #222; display: flex; gap: 1rem; }
+ .info-detail li strong { min-width: 100px; color: #ff7700; }
+ /* FAQ */
+ .faq-item { 
+ margin-bottom: 1.5rem; 
+ border-bottom: 1px solid #222; 
+ padding-bottom: 1rem; 
+ }
+ .faq-item h4 { 
+ cursor: pointer; 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+ color: #ff7700; 
+ font-size: 1.1rem; 
+ font-weight: 700; 
+ }
+ .faq-item h4::after { content: '+'; font-size: 1.4rem; color: #ff0055; }
+ .faq-item p { margin-top: 0.5rem; }
+ /* TEL LINK */
+ .tel-link { 
+ display: inline-block; 
+ background: #ff0055; 
+ color: #fff !important; 
+ padding: 0.8rem 2rem; 
+ font-weight: 900; 
+ font-size: 1.4rem; 
+ border: none; 
+ border-radius: 0; 
+ text-align: center; 
+ transition: background 0.2s; 
+ text-decoration: none; 
+ border-bottom: none !important; 
+ margin-top: 1rem; 
+ }
+ .tel-link:hover { background: #ff7700; color: #fff !important; }
+ /* RESPONSIVE 768 */
+ @media (max-width: 768px) {
+ .info-detail { grid-template-columns: 1fr; gap: 2rem; }
+ .hero h1 { font-size: clamp(2rem, 10vw, 3rem); }
+ .tel-link { font-size: 1.2rem; padding: 0.7rem 1.5rem; width: 100%; }
+ }
+ /* FOOTER */
+ footer { 
+ text-align: center; 
+ padding: 3rem 1rem; 
+ background: #111; 
+ border-top: 2px solid #222; 
+ font-size: 0.85rem; 
+ color: #666; 
+ }
+ footer a { color: #ff0077; }
+ </style>
+ <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "LocalBusiness", "name": "마포 셔츠룸 서버 웜업", "description": "마포 셔츠룸 완벽한 서버 웜업. 지루한 놈들은 꺼져라.</script>
 </head>
 <body>
 
@@ -224,7 +205,7 @@
 <ul>
 <li>지역: 서울 마포구</li>
 <li>업종: 셔츠룸</li>
-<li>문의: <a class='tel-link' href='tel:01062790862'>010-6279-0862</a></li>
+<li>문의: </li>
 </ul>
 </div>
 <div class='right'>
